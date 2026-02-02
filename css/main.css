@@ -1,0 +1,126 @@
+.hidden {
+    display: none;
+}
+
+h2 {
+   text-align: center;
+   font-size: 32px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    padding-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 20px;
+}
+
+.triangle {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#orange:hover .triangle {
+    animation: wiggle 3s infinite;
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(3deg);}
+    75% {transform: rotate(-3deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#lemon_small {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#lemon:hover #lemon_small {
+    animation: spin 2s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#strawberry_seeds {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#strawberry:hover #strawberry_seeds {
+    animation: jiggle 2s infinite;
+}
+
+@keyframes jiggle {
+    0%, 100% {
+        transform: rotate(-5deg);
+        transform-origin: 50% 50%;
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+#grapefruit_inner {
+     transform-box: fill-box;
+    transform-origin: center;
+}
+
+#grapefruit:hover #grapefruit_inner {
+    animation: spin-left 2s infinite;
+}
+
+@keyframes spin-left {
+     from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+#lime:hover {
+    animation: spin 2s infinite;
+}
+
+#dragonfruit:hover .dragonfruit_seeds {
+    fill: #ef4b87;
+}
+
+#dragonfruit:hover .dragonfruit_white {
+    fill: #231f20;
+}
+
+#orange {
+    padding-top: 150px;
+    padding-right: 30px;
+}
+
+#strawberry {
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+#grapefruit {
+    padding-top: 200px;
+}
+
+#lime {
+    padding-top: 180px;
+}
+
+#dragonfruit {
+    padding-top: 100px;
+}
